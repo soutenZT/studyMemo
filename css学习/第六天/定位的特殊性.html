@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定位的特殊性</title>
+    <style>
+        div {
+            /* width: 100px;
+            height: 200px; */
+            position: absolute;
+            background-color:red;
+        }
+        span {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left:500px;
+            background-color:red;
+        }
+        .left {
+            /* width: 100px;
+            height: 200px; */
+            position: absolute;
+            left: 300px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>设置了固定定位和绝对定位的盒子，和浮动一样, 拥有行内块的特性</li>
+        <li>浮动的盒子，会压住下面的标准流盒子, 但是不会压住标准流盒子中的文字或图片</li>
+        <li>设置了固定定位和绝对定位的盒子，和浮动不一样, 会压住标准流盒子中的文字或图片</li>
+    </ul>
+    <div>222</div>
+    <div class="left">333</div>
+    <span>444</span>
+</body>
+</html>

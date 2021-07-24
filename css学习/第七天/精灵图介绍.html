@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>精灵图介绍</title>
+    <style>
+        .download {
+            width: 235px;
+            height: 127px;      
+            background-color: pink; 
+            background: url("./index.png") no-repeat 0 -220px
+        }
+    </style>
+</head>
+<body>
+    <p>精灵图称作sprites, 作用是减少服务器压力</p>
+    <ul>
+        <li>主要用在背景图上。就是将多个背景小图片整合到一个大图片上</li>
+        <li>移动背景图片的位置,只显示想要的小图片，通过设置background-position</li>
+        <li>移动的距离就是这个图片的x→,y↓坐标</li>
+        <li>因为一般情况下,都是往上左移动,所以数值是负值</li>
+    </ul>
+
+    <div class="download">
+       
+    </div>
+</body>
+</html>

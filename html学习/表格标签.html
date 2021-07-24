@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格标签</title>
+</head>
+<body>
+    <div>
+    <h3>表格标签不是用来布局的， 而是用来展示数据的</h3>
+
+    <p>表格标签  table    th     tr td</p>
+    </div>
+    <div id="1">
+        <h4>表格标签的属性</h4>
+        <table align="left" border="2" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>属性名</th>
+                <th>属性值</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>align</td>
+                <td>left, right, center</td>
+                <td>表格元素的对齐方式</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>1 或 ""</td>
+                <td>规定表格是否有边框，默认是没有边框, <strong>边框包括每个单元格和整个表格</strong></td>
+            </tr>
+            <tr>
+                <td>cellpadding</td>
+                <td>数字</td>
+                <td>代表单元格边框和单元格内容，之间的距离</td>
+            </tr>
+            <tr>
+                <td>cellspacing</td>
+                <td>数字</td>
+                <td>代表单元格和单元格，之间的距离，<strong>当单元格之间没有距离时, 之前包裹所有单元格的一个边框也消失了</strong></td>
+            </tr>
+            <tr>
+                <td>width和height</td>
+                <td>数字</td>
+                <td>表格的宽度个高度</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div id="2">   
+        <h4>合并单元格</h4>
+        <table border="">
+            <tr>
+                <td>222</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

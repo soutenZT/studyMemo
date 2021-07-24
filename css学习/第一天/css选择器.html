@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS选择器</title>
+    <style>
+        /* 标签选择器 */
+        h4 {
+            color: red;
+        }
+
+        /* 类选择器 */
+        .font-35 {
+            font-size: 35px;
+        }
+        .blue {
+            color: blue;
+        }
+
+        /* id选择器 */
+        #bk-red {
+            background-color: red;
+        }
+        #cl-blue {
+            color: blue;
+        }
+
+        /* 通配符选择器 */
+        * {
+            font-family: "Micrsoft YaHei", tahoma, arial, "Hiragino Sans GB"
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS选择器分为两大类</h3>
+    <ul>
+        <li><a href="#basic">基础选择器</a></li>
+        <li><a href="#complex">复合选择器</a></li>
+    </ul>
+
+    <h3 class="">基础选择器</h3>
+    <div id="basic">
+        <h4>标签选择器</h4>
+        <p>选定所有指定的标签<br>
+            <strong>语法：<em>标签 {样式}</em></strong>
+        </p>
+
+        <h4>类选择器</h4>
+        <p>选择所有指定class的标签. <br>可以同时有多个class的样式, 例如class="cls1 cls2"<br>
+            <strong>语法：<em>.class {样式}</em></strong>
+        </p>
+        <p class="font-35 blue">test class</p>
+
+        <h4>id选择器</h4>
+        <p>
+            选择指定id的标签, html中id是不能重复的，所以只能定位到一个标签<br>
+            <strong>语法：<em>#id {样式}</em></strong>
+        </p>
+        <p id="bk-red">test id</p>
+
+        <h4>通配符选择器</h4>
+        <p>
+            选择所有标签. <br>
+            <strong>语法：<em>* {样式}</em></strong>
+        </p>
+    </div>
+    
+    <h3>复合选择器</h3>
+    <div id="complex">
+        
+    </div>
+
+</body>
+</html>

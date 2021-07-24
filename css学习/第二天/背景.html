@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景</title>
+    <style>
+        body {
+            background:red url(11.jpg) no-repeat fixed right 10px
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>背景颜色 background-color:</li>
+        <li>背景图片 background-image:url(url)  <strong>实际开发中，用于logo，装饰图片或超大背景图</strong></li>
+        <li>背景平铺 background-repeat: <strong>默认是平铺的</strong></li>
+        <li>背景图片位置 background-position: x y  <strong>单位是像素或方向</strong><br>
+            1.如果是方向  x:left right center  y: top center bottom, x y 左右不分，可以省略一个，另一个默认center
+            <br>
+            2.如果是像素  固定 x y 左边x右边y
+            <br>
+            3.如果是混合方向和像素   left 20px  固定 x y 左边x右边y
+            <br>
+            4.如果图片很大，显示不完整，可以使用这个调整
+        </li>
+        <li>背景固定 background-attachment:scroll | fixed <strong>默认是随着内容滚动</strong></li>
+        <li>背景颜色半透明 background：rgba(0,0,0 0.3)
+            <br>
+            最后一个值表示透明程度，取值在0~1之间, 0.3可以写成.3
+        </li>
+    </ul>
+
+    <h4>背景复合写法</h4>
+    <p>background：背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置</p>
+    <div>
+1111        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型</title>
+    <style>
+        h4 {
+            color:red;
+        }
+        h5 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h3>页面布局的本质：</h3>
+    <ul>
+        <li>盒子模型</li>
+        <li>浮动</li>
+        <li>定位</li>
+    </ul>
+
+    <div>
+        <h4>盒子模型</h4>
+        <p>css盒子模型本质是一个盒子，封装周围的元素，它包括边框(border)、外边距(margin)、内边距(padding)、内容</p>
+        <p>盒子实际长度 = width(内容) + 左右边框 + 左右内边距</p>
+        <p>盒子实际高度 = height(内容) + 上下边框 + 上下内边距</p>
+
+
+        <h5>边框属性</h5>
+        <ul>
+            <li>宽度border-width: 30px</li>
+            <li>样式border-style: solid dashed dotted</li>
+            <li>颜色border-color</li>
+            <li>合并相邻边框 borer-collapse: collpase</li>
+        </ul>
+        <span><strong>简写 border: 1px red solid 没有顺序</strong></span>
+        <p>只设置一条： border-top: 1px solid red</p>
+        <p>会影响盒子的大小</p>
+
+        <h5>内边距</h5>
+        <p>内容距离边框的距离</p>
+        <p><strong>属性值从上开始，顺时针, 可以有1~4个值</strong></p>
+        <p>会影响盒子的大小</p>
+
+        <h5>外边距</h5>
+        <p>两个盒子之间的距离</p>
+        <p><strong>属性值从上开始，顺时针, 可以有1~4个值</strong></p>
+        <p>外边距应用：把块级盒子水平居中，满足两个条件即可<br>
+            1.盒子必须指定宽度
+            <br>
+            2.margin:0 auto;
+        </p>
+        <p>如何让行内元素或行内块居中? 将父元素text-align:center(对于父元素而言，子行内或子行内块就像一个普通的文本)</p>
+        <p><strong>嵌套块元素垂直外边距塌陷</strong></p>
+        <p>问题：对于两个嵌套的块元素，父元素和子元素同时有外边距的时候，父元素会塌陷较大的边距值<br>
+            解决方案：设置父元素的外边距或内边距，或者overflow：hidden
+        </p>
+
+        <h5>清除内外边距</h5>
+        <p>浏览器默认会有内外边距，所以开发中一般在css第一行会清除内外边距</p>
+        <p>* {margin：0；padding 0}</p>
+    </div>
+</body>
+</html>

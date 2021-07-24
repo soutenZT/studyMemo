@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圆角边框和阴影</title>
+    <style>
+        .radius {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /* 当盒子是正方形，且设置值是长度的一半时, 盒子会变成圆 */
+            border-radius: 100px;
+            
+        }
+        div:hover {
+            box-shadow: 10px 10px 10px -4px rgba(146, 105, 105, 0.3);
+        }
+        #shadow {
+            color: orange;
+            font-size: 50px;
+            text-shadow: 10px 10px 10px rgba(146, 105, 105, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h3>圆角边框</h3>
+    <p>让盒子的边角更加圆润</p>
+    <span>border-radius: length(圆半径)</span>
+
+    <h3>盒子阴影</h3>
+    <span>box-shadow:x y(必须) blur(模糊程度) spread(尺寸) color inset</span>
+
+    <h3>文本阴影</h3>
+    <span>text-shadow: x y blur color</span>
+    <div class="radius">
+        
+    </div>
+
+    <span id="shadow">给我ying</span>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户界面样式</title>
+    <style>
+        /* 单行文字溢出用省略号显示 */
+        .row {
+            /* 有宽高，文字才会溢出 */
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* nomal(默认, 溢出文字换行), nowrap(文字不换行) */
+            white-space: nowrap;
+            /* 隐藏溢出的部分 */
+            overflow: hidden;
+            /* 文字用省略号代替溢出的部分 */
+            text-overflow: ellipsis;
+
+        }
+         /* 多行文字溢出用省略号显示    有兼容性问题*/
+         .rows1 {
+            /* 有宽高，文字才会溢出 */
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* nomal(默认, 溢出文字换行), nowrap(文字不换行) */
+            /* white-space: nowrap; */
+            /* 隐藏溢出的部分 */
+            overflow: hidden;
+            /* 文字用省略号代替溢出的部分 */
+            text-overflow: ellipsis;
+        
+            display: -webkit-box;
+            /* 第几行加省略号 */
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical
+
+        }
+    </style>
+</head>
+<body>
+    <h3>鼠标</h3>
+    <p>{cursor: default pointer test not-allowed ..}</p>
+    <h3>取消表单轮廓线</h3>
+    <p>{outline：none }</p>
+    <h3>防止拖拽文本域</h3>
+    <p>{resize：none }</p>
+
+    <h3>vertical-align：middle 实现图片和文字垂直居中对齐</h3>
+    <p>可以给图片、表单这些行内块元素设置</p>
+
+    <h3>溢出的文字省略号展示</h3>
+    <p>单行文字溢出，省略号显示</p>
+    <div class="row">
+        111111111111111
+    </div>
+   
+
+    <p>多行文字溢出，省略号显示</p>
+    <div class="rows1">
+        11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+
+    </div>
+
+</body>
+</html>

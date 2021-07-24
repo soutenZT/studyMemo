@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css属性顺序</title>
+    <style>
+        div {
+            display: block;
+            position: absolute;
+            float: left;
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+            color:red;
+            font: 20/10 Microsoft YaHei;
+        }
+    </style>
+</head>
+<body>
+    <h4>通常一个选择器，有很多属性，这些属性最好有个书写顺序</h4>
+    <ul>
+        <li>1.布局定位属性 diplay/position/float/clear/visbisity/overflow</li>
+        <li>2.自身属性  width/height/margin/padding/border/background</li>
+        <li>3.文本属性  color/font/text</li>
+        <li>4.其他</li>
+    </ul>
+</body>
+</html>

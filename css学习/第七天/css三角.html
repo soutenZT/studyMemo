@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css三角</title>
+    <style>
+        /* 一个不设置宽高，只设置border的盒子，最后呈现出4个三角形构成的正方形 */
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 50px solid pink;
+            border-bottom: 50px solid red;
+            border-left: 50px solid blue;
+            border-right: 50px solid green;
+        }
+        
+        /* 让其他三边都透明，只设置一边, 就是一个三角形 */
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 50px solid  transparent;
+            border-top: 50px solid blue;
+        }
+
+        /*  */
+        .test {
+            position: relative;
+            width: 200px;
+            height: 400px;
+            background-color: pink;
+        }
+        .test span {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left: 10px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="test">
+        <span></span>
+    </div>
+</body>
+</html>

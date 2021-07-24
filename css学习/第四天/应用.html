@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 伪元素 */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+
+        .top {
+            width: 800px;
+            margin: 0 auto;
+            background-color: red;
+            /* overflow: hidden; */
+        }
+        .left {
+            width: 100px;
+            height: 500px;
+            float: left;
+            background-color: blue;
+        }
+        .main {
+            width: 600px;
+            height: 500px;
+            float: left;
+            background-color: skyblue;
+        }
+        .right {
+            width: 100px;
+            height: 500px;
+            float: left;
+            background-color: pink;
+        }
+        .test {
+            width: 800px;
+            height: 500px;
+            background-color: black;
+        }
+        /* #yu {
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <div class="top clearfix">
+        <div class="left">11</div>
+        <div class="main">22</div>
+        <div class="right">33</div>
+        <div id="yu"></div>
+    </div>
+    <div class="test">
+        5
+    </div>
+</body>
+</html>

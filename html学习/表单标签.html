@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单元素之input元素</title>
+</head>
+<body>
+
+    <form action="">
+        <h3>input 输入表单元素有多个属性，包括：</h3>
+        <ul>
+            <li>type</li>
+            <li>name</li>
+            <li>value</li>
+            <li>checked</li>
+            <li>maxlength</li>
+        </ul>
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+
+        <!-- 一组radio单选标签, 或一组多选checkbox标签的name要保持一致 -->
+        <!-- radio和checkbox标签可以有checked属性 -->
+        性别：<input type="radio" name="sex" value="男" checked> 男 <input type="radio" name="sex" value="女"> 女<br>
+        兴趣：<input type="checkbox" name="hobby">
+             <input type="checkbox" name="hobby">
+             <input type="checkbox" name="hobby">
+             <input type="checkbox" name="hobby"><br>
+        普通按钮: <input type="button" value="确定">
+        提交按钮：<input type="submit" value="提交">
+        重置按钮：<input type="reset"><br>
+        <input type="file">
+        <input type="hidden">
+        
+
+        <h3>lebel标签</h3>
+        <p>作用是：当点击标签对应的文本时, 光标能自动定焦到相应的标签</p>
+        <p>做法是：将label的for属性值, 和对应标签的id属性值绑定起来</p>
+        <label for="1">1班</label>
+        <input type="radio" name="class" value="1" id="1">
+        <label for="2">2班</label>
+        <input type="radio" name="class" value="2" id="2">
+
+
+        <h3>select下拉表单元素</h3>
+        籍贯：
+        <select name="" id="">
+            <option value=""></option>
+            <option value="">山东</option>
+            <option value="">湖北</option>
+            <option value="">湖南</option>
+            <option value="">江西</option>
+        </select>
+
+        <h3>textarea文本域</h3>
+        备注：
+        <textarea name="" id="" cols="30" rows="10">
+            
+        </textarea>
+    </form>
+
+</body>
+</html>   

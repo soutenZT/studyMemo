@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css三大特性</title>
+    <style>
+        /* body {
+            color: red!important;
+        } */
+        p {
+            color: blue;
+        }
+        p{
+            color: red;
+        }
+        .di {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="di">
+        11
+        <div style="background-color: red">22</div>
+    </div>
+    <ul>
+        <li>层叠性</li>
+        <li>继承性</li>
+        <li>优先级</li>
+    </ul>
+
+    <h3>层叠性</h3>
+    <p>当有多个相同的选择器，每一个样式不同时, 采用最近的样式， 就近原则</p>
+    
+    <h3>继承性</h3>
+    <p><span>11111</span> 子元素可以继承父元素的某些样式(父元素高度就不会被继承)</p>
+
+    <h3>优先级</h3>
+    <p> !important > 行内样式 > id选择器 > 类/伪类选择器 > 元素 > 继承</p>
+    <p>权重: 无线大 > 1,0,0,0 > 0,1,0,0 > 0,0,1,0 > 0,0,0,1 > 0,0,0,0</p>
+
+    <h4>权重的叠加</h4>>
+    <p>复合选择器会有权重叠加的问题</p>
+
+
+</body>
+</html>

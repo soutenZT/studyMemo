@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3新特性</title>
+    <style>
+        h4 {
+            color: green;
+        }
+        input[type] {
+            color: red;
+        }
+
+        section span:first-child {
+            background-color: red;
+        }
+
+        section span:first-of-type {
+            background-color: red;
+        }
+
+        div::before {
+            content: "前"
+        }
+        div::after {
+            content: "后"
+        }
+        div {
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+        }
+    
+    </style>
+</head>
+<body>
+    <h3>新增选择器</h3>
+    <h4>属性选择器  权重是10</h4>
+    <ul>
+        <li>具有value属性的标签  x[value]</li>
+        <li>value属性是hello的标签  x[value="hello"]</li>
+        <li>value属性以love开头的标签  x[value^="love"]</li>
+        <li>value属性以end结尾的标签  x[value$="end"]</li>
+        <li>value属性含有li的标签  x[value*="li"]</li>
+    </ul>
+
+    <h4>结构伪类选择器 权重是12</h4>
+    <ul>
+        <li>ul li:first-child</li>
+        <li>ul li:last-child</li>
+        <li>ul li:nth-child(2)</li>
+        <li>ul li:nth-child(even) 偶数</li>
+        <li>ul li:nth-child(odd) 奇数</li>
+        <li>ul li:nth-child(n) 所有相当于循环n次 n叠加  必须是n字母</li>
+        <li>ul li:nth-child(公式n) 2n 或 n+2等等</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>ul li:first-of-type</li>
+        <li>ul li:last-of-type</li>
+        <li>ul li:nth-of-type(2)</li>
+        <li>ul li:nth-of-type(even) 偶数</li>
+        <li>ul li:nth-of-type(odd) 奇数</li>
+        <li>ul li:nth-of-type(n) 所有相当于循环n次 n叠加  必须是n字母</li>
+    </ul>
+
+    <strong>:nth-child和nth-of-type区别在于：前者先匹配冒号后的，找到元素后和冒号前匹配，不一致就找不到。<br> 
+        后者先匹配冒号前的
+    </strong>
+   <section>
+       <p>1</p>
+       <span>2</span>
+       <span>3</span>
+   </section>
+
+   <h4>伪元素选择器</h4>
+   <p>伪元素可以帮助我们利用css创建标签元素，而不需要要html，从而简化html结构</p>
+   <ul>
+       <li>element::before</li>
+       <li>element::after</li>
+   </ul>
+   <ul>
+       <li>before和after创建一个行内元素</li>
+       <li>新创建的元素在文档树内找不到，所以叫做伪元素</li>
+       <li>必须有content属性</li>
+       <li>before在父元素前，after在后</li>
+       <li>权重为1</li>
+   </ul>
+
+   <div>
+       呵呵
+   </div>
+</body>
+</html>

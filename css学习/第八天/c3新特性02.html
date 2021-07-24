@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h4 {
+            color: green;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            border: 10px solid blue; 
+            /* 之前默认的 会撑开盒子的 */
+            box-sizing: content-box；
+        }
+        p {
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            border: 10px solid blue;
+            /* 不会撑开盒子 */
+            box-sizing: border-box;
+        }
+        
+        img {
+            /* blur 模糊处理   数值越大越模糊 单位是px */
+            filter: blur(5px)
+        }
+    </style>
+</head>
+<body>
+    <h4>css3盒子模型</h4>
+    <p>之前border和padding都会撑大盒子，css3提供了新的盒子模型消除这种问题</p>
+    <div>
+        sss
+    </div>
+
+    <h4>图片模糊处理</h4>
+    <span>属性filter: 函数</span>
+    <img src="./11.jpg" alt="">
+
+    <h4>使用函数计算值</h4>
+    <span>calc(100% - 20px)</span>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h4 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h3>为什么要清除浮动</h3>
+    <p>1.因为大多数情况，不知道内容到底有多少，所以标准元素父盒子不好设置高度<br>
+       2.这样看上去，浮动子元素好像撑开了，标准父盒子，父盒子高度完全去配合子元素的高度<br>
+       3.但是，实际浮动元素不占位置，所以最后父盒子高度其实是0 <br>
+       4.这样一来，父盒子下面同级别的，标准元素盒子，会去占用父盒子的位置，导致布局混乱 <br>
+       5.所以，要清除浮动元素造成的这种影响。
+    </p>
+
+
+    <h4>清除浮动的本质</h4>
+    <p>清除浮动元素带来的影响</p>
+
+    <h4>清除浮动的策略</h4>
+    <p>闭合浮动, 让浮动在父盒子内部影响，不影响父盒子外面的盒子</p>
+    
+    <h4>清除浮动的方法</h4>
+    <p>
+        <strong>1.额外标签法</strong><br>
+            &nbsp;&nbsp;在浮动子元素最后，再加一个空的块元素，并且给该元素样式添加浮动清除。clear:both <br>
+            这方法会导致最后，加入很多空的标签, 所以不能使用很多。
+    </p>
+
+    <p>
+        <strong>2.父级添加overflow</strong><br>
+            &nbsp;&nbsp;给父级元素添加样式，overflow：hidden auto scroll
+    </p>
+
+    <p>
+        <strong>3.父级添加 :after伪元素</strong></p>
+
+    <p>
+        <strong>4.父级添加 双伪元素</strong>
+    </p>
+</body>
+</html>

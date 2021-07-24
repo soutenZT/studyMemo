@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>混合选择器</title>
+    <style>
+        h4 {
+            color: red;
+        }
+        p {
+            font-weight: 700;
+        }
+
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: normal;
+        }
+
+        input:focus {
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <h3>混合选择器种类</h3>
+    <ul>
+        <li>后代选择器</li>
+        <li>子选择器</li>
+        <li>并集选择器</li>
+        <li>伪类选择器</li>
+    </ul>
+
+    <h4>后代选择器</h4>
+    <p><strong>元素1 元素1后代 {样式}</strong></p>
+
+    <h4>子选择器</h4>
+    <span>元素的子元素</span>
+    <p>元素1>元素1儿子 {样式}</p>
+
+    <h4>并集选择器</h4>
+    <span>同时选择多组标签</span>
+    <p>选择器1,<br> 
+       选择器2,<br>
+       选择器3 {样式}</p>
+
+    <h4>伪类选择器</h4>
+    <p>链接伪类选择器 a:</p>
+    <span>顺序不能变化， lvha</span>
+    <ul>
+        <li>a:link 未访问的链接</li>
+        <li>a:visited 访问的链接</li>
+        <li>a:hover 鼠标经过的链接</li>
+        <li>a:active 正在按下还没松开的链接</li>
+    </ul>
+
+    <p>:focus 用于获取光标定焦的表单元素</p>
+
+
+</body>
+</html>
